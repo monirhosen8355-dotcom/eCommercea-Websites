@@ -20,40 +20,44 @@
     <!-- Header Navigation -->
     <header>
         <nav class="main-nav">
-            <div class="container nav-container">
-                <div class="logo">
-                    <a href="#">Sirat <span> Organic</span></a>
-                </div>
-                <ul class="nav-links">
-                    <li><a href="#">Web Themes & Templates</a></li>
-                    <li><a href="#">Code</a></li>
-                    <li><a href="#">Video</a></li>
-                    <li><a href="#">Audio</a></li>
-                    <li><a href="#">Graphics</a></li>
-                    <li><a href="#">Photos</a></li>
-                    <li><a href="#">3D Files</a></li>
-                </ul>
-                <div class="nav-right">
-                    <a href="#" class="hide-mobile">Start Selling</a>
-                    <a href="#" class="hide-mobile">Our Products</a>
-                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-                    <a href="#" class="btn-signin">Sign In</a>
-                </div>
-            </div>
-        </nav>
-        <div class="sub-nav">
-            <div class="container">
-                <ul class="sub-links">
-                    <li><a href="#">All Items</a></li>
-                    <li><a href="#">WordPress</a></li>
-                    <li><a href="#">Elementor</a></li>
-                    <li><a href="#">Hosting</a></li>
-                    <li><a href="#">HTML</a></li>
-                    <li><a href="#">Shopify</a></li>
-                    <li><a href="#">More</a></li>
-                </ul>
-            </div>
+    <div class="container nav-container">
+
+        <!-- 🔥 ADD THIS -->
+        <div class="menu-icon" onclick="toggleMenu()">
+            <i class="fa fa-bars"></i>
         </div>
+
+        <!-- LOGO -->
+        <div class="logo">
+            <a href="#">Sirat <span> Organic</span></a>
+        </div>
+
+        <!-- MENU -->
+        <ul class="nav-links" id="menu">
+    <li><a href="#">Web Themes & Templates</a></li>
+    <li><a href="#">Code</a></li>
+    <li><a href="#">Video</a></li>
+    <li><a href="#">Audio</a></li>
+    <li><a href="#">Graphics</a></li>
+    <li><a href="#">Photos</a></li>
+    <li><a href="#">3D Files</a></li>
+
+    <!-- 🔥 ADD THESE -->
+    <li class="mobile-only"><a href="#">Start Selling</a></li>
+    <li class="mobile-only"><a href="#">Our Products</a></li>
+    <li class="close-btn" onclick="toggleMenu()">✖ Close</li>
+</ul>
+
+        <!-- RIGHT -->
+        <div class="nav-right">
+            <a href="#" class="hide-mobile">Start Selling</a>
+            <a href="#" class="hide-mobile">Our Products</a>
+            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="#" class="btn-signin">Sign In</a>
+        </div>
+
+    </div>
+</nav>
     </header>
 
     <main class="container">

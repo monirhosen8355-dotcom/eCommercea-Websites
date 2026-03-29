@@ -56,3 +56,21 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+function toggleMenu(){
+let menu=document.getElementById("menu");
+menu.classList.toggle("active");
+}
+function toggleMenu(){
+    let menu = document.getElementById("menu");
+    menu.classList.toggle("active");
+}
+
+// 🔥 বাইরে click করলে menu বন্ধ হবে
+document.addEventListener("click", function(e){
+    let menu = document.getElementById("menu");
+    let icon = document.querySelector(".menu-icon");
+
+    if(!menu.contains(e.target) && !icon.contains(e.target)){
+        menu.classList.remove("active");
+    }
+});
